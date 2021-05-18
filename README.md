@@ -11,13 +11,13 @@ S.O.L.I.D Principles in Swift
 
 
 
+#### The Single Responsibility Principle
 
-# The Single Responsibility Principle
+> A class should have one and only one reason to change, meaning that a class should have only one job.
 
-A class should have one and only one reason to change, meaning that a class should have only one job.
-
-Example:
-
+<details>
+  <summary>Click to see the code example!</summary>
+	
 ```swift
 
 protocol Openable {
@@ -95,12 +95,14 @@ let doorCloser = DoorCloser(door: door)
 doorCloser.execute()
 
 ```
+</details>
 
-# The Open Closed Principle
+#### The Open Closed Principle
 
-Objects or entities should be open for extension but closed for modification.
+> Objects or entities should be open for extension but closed for modification.
 
-Example:
+<details>
+  <summary>Click to see the code example!</summary>
  
 ```swift
 
@@ -153,12 +155,14 @@ weapons = WeaponsComposite(weapons: [laser, rocket])
 weapons.shoot()
 
 ```
+</details>
+	
+#### The Liskov Substitution Principle
 
-# The Liskov Substitution Principle
+> Derived classes must be substitutable for their base classes.
 
-Derived classes must be substitutable for their base classes.
-
-Example:
+<details>
+  <summary>Click to see the code example!</summary>
 
 ```swift
 
@@ -200,12 +204,14 @@ if let requestError = result.error as? RequestError {
 }
 
 ```
+</details>
+	
+#### The Interface Segregation Principle
 
-# The Interface Segregation Principle
+> Make fine grained interfaces that are client specific.
 
-Make fine grained interfaces that are client specific.
-
-Example:
+<details>
+  <summary>Click to see the code example!</summary>
  
 ```swift
 
@@ -271,12 +277,14 @@ let spaceStation = InternationalSpaceStation()
 spaceStation.fetchPayload(vehicle: crs8)
 crs8.land(on: barge)
 ```
+</details>
 
-# The Dependency Inversion Principle
+#### The Dependency Inversion Principle
 
-Depend on abstractions, not on concretions.
+> Depend on abstractions, not on concretions.
 
-Example:
+<details>
+  <summary>Click to see the code example!</summary>
 
 ```swift
 
@@ -312,3 +320,4 @@ let timeMachine = DeLorean()
 
 let mastermind = EmmettBrown(timeMachine: timeMachine)
 mastermind.travelInTime(time: -3600 * 8760)
+</details>
