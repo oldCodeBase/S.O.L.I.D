@@ -3,15 +3,7 @@
 S.O.L.I.D Principles in Swift
 ================================
 
-* [The Single Responsibility Principle](#the-single-responsibility-principle)
-* [The Open Closed Principle](#the-open-closed-principle)
-* [The Liskov Substitution Principle](#the-liskov-substitution-principle)
-* [The Interface Segregation Principle](#the-interface-segregation-principle)
-* [The Dependency Inversion Principle](#the-dependency-inversion-principle)
-
-
-
-#### The Single Responsibility Principle
+### The Single Responsibility Principle
 
 > A class should have one and only one reason to change, meaning that a class should have only one job.
 
@@ -97,7 +89,7 @@ doorCloser.execute()
 ```
 </details>
 
-#### The Open Closed Principle
+### The Open Closed Principle
 
 > Objects or entities should be open for extension but closed for modification.
 
@@ -157,7 +149,7 @@ weapons.shoot()
 ```
 </details>
 	
-#### The Liskov Substitution Principle
+### The Liskov Substitution Principle
 
 > Derived classes must be substitutable for their base classes.
 
@@ -279,7 +271,7 @@ crs8.land(on: barge)
 ```
 </details>
 
-#### The Dependency Inversion Principle
+### The Dependency Inversion Principle
 
 > Depend on abstractions, not on concretions.
 
